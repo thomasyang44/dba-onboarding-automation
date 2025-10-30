@@ -5,7 +5,7 @@ NAMESPACE="cp4ba-collateral"
 STATEFULSET="mongodb"
 DEPLOYMENT="mongo-express"
 POSTGRES_IMAGE="docker.io/bitnamilegacy/mongodb:5.0.24-debian-11-r20"
-OPENLDAP_IMAGE="docker.io/bitnamilegacy/mongo-express:1.0.2-20-alpine3.19"
+OPENLDAP_IMAGE="docker.io/mongo-express:1.0.2-20-alpine3.19"
 
 echo "🔻 Scaling down Deployment $DEPLOYMENT..."
 oc scale deployment "$DEPLOYMENT" --replicas=0 -n "$NAMESPACE"
